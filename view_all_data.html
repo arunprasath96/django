@@ -1,0 +1,24 @@
+<html>
+   <head>
+      <title>WELCOME TO OUR HOME PAGE</title>
+   </head>
+   <body bgcolor="black" text="white">
+  <center><h2>EMPLOYEE DATA</h2></center>
+     <table border='15' align="center" height= 500 width=500 font-size:40px>
+        <th> Id</th> <th> Name </th> <th> Desgination </th> <th> Salary </th> <th>City</th> 
+     {% for obj in object_list %}
+      
+      <tr>
+        <td>{{ obj.emp_id }} </td> 
+        <td>{{ obj.emp_name }}</td>
+        <td>  {{ obj.emp_desgination }} </td> 
+        <td>{{ obj.emp_salary }} </td>
+        <td>{{ obj.emp_city }}</td>
+      </tr>
+      
+     {% endfor %}
+     </table> 
+</center>
+
+   </body>
+</html>

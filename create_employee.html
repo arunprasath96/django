@@ -1,0 +1,19 @@
+<html>
+   <head>
+      <title>WELCOME TO OUR HOME PAGE</title>
+   </head>
+   <body bgcolor="blacks" text="white">
+  <center><h2>ADD NEW EMPLOYEE</h2></center>
+     <table border='15' align="center" height= 500 width=500 font-size:40px>
+      <form method='POST'> {% csrf_token %}
+         
+         {{ form.as_table }}
+
+         <tr> <td colspan='2'> <input type="Submit" name='Add' /></td></tr> 
+       </form>
+      
+     </table> 
+</center>
+
+   </body>
+</html>
